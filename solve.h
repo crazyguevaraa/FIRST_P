@@ -2,7 +2,8 @@
 #include <math.h>
 
 static const int STOP = -1;
-int solverr(double a, double b, double c, double *x1, double *x2)
+
+int solver_r(double a, double b, double c, double *x1, double *x2)
 {
     if (a == 0)
         {
