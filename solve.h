@@ -5,6 +5,9 @@ static const int STOP = -1;
 
 int solver_r(double a, double b, double c, double *x1, double *x2)
 {
+    assert(isfinite (a));
+    assert(isfinite (b));
+    assert(isfinite (c));
     if (a == 0)
         {
             if (b == 0)

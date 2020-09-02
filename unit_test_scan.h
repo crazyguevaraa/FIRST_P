@@ -1,6 +1,5 @@
 #ifndef unit_test_scan_h
 #define unit_test_scan_h
-
 #include <stdio.h>
 #include <assert.h>
 
@@ -12,9 +11,4 @@ void test_scan()
     assert(scan(&a, &b, &c) == 3);
     printf("test_scan пройден.\n");
 }
-
-
-
-
-
 #endif /* unit_test_scan_h */
