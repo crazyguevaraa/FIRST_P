@@ -4,6 +4,7 @@
 #include "scan.h"
 #include "unit_test.h"
 #include "unit_test_scan.h"
+#include "test_coef.h"
 //------------------------------------------
 //!  Решатель квадратных уравнений ax2+bx+c
 //!  @param [in] a              a-коэффициент
@@ -16,16 +17,17 @@
 //!
 //!  @note Если число корней бесконечно , то возвращает STOP
 //------------------------------------------
-
 int main ()
 {
-    test_solve_square();
     test_scan();
+    test_coef();
+    test_solve_square();
     double a = 0, b = 0, c = 0;
     scan(&a, &b, &c);
     double x1 = 0, x2 = 0;
     int noroots = solver_r(a, b, c, &x1, &x2);
     print_answer(noroots, x1, x2);
+    
 }
 
 
