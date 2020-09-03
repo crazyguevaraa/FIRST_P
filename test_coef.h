@@ -12,7 +12,7 @@ void test_coef()
     double coef_1[6] = {0, 0, 1e-15, 1, 1, 1e-15};
     double coef_2[6] = {-1, 0, 1, 1e-15, 1, 1e-15};
     double coef_3[6] = {0, -1, 1, 1, 1e-15, 1};
-    int num_roots[6] = {1, 0, 2, 0, 2, 0};
+    int num_roots[6] = {1, 0, 2, 0, 0, 0};
     int roots[6];
     double x1 = 0, x2 = 0;
     for(i = 0; i < 4; i++)
